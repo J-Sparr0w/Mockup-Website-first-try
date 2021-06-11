@@ -1,0 +1,169 @@
+html,
+body {
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  font-size: 62.5%;
+}
+header,
+.boxContainer,
+.box {
+  display: flex;
+}
+
+nav {
+  font-family: "Amatic SC", cursive;
+  letter-spacing: 1.5px;
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  height: 10vh;
+  box-sizing: border-box;
+  display: flex;
+  font-size: 1.2vw;
+  justify-content: space-between;
+  backdrop-filter: blur(0.1rem);
+}
+header {
+  height: 100vh;
+  background-image: url("/src/images/pexels-rene-asmussen-334979.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  padding: 0.1px;
+  width: 100%;
+  height: 20vh;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+a {
+  margin: 5px 15px;
+  color: black;
+}
+.nav-bar {
+  display: none;
+}
+.nav-bar a {
+  color: white;
+}
+.nav-bar a:hover {
+  color: rgb(255, 152, 152);
+}
+.nav-bar.show {
+  display: flex;
+}
+.mockupLogo {
+  margin: 5px 30px;
+  height: 80%;
+}
+.hamburger {
+  justify-content: center;
+  width: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#line1,
+#line2,
+#line3 {
+  background-color: black;
+  margin-top: 0.5vh;
+  margin-left: 1.4vw;
+  width: 25px;
+  height: 2px;
+}
+
+.boxContainer {
+  height: 50%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.box {
+  height: 100%;
+  width: 80%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 152, 152, 0.795),
+    rgba(250, 196, 196, 0.603)
+  );
+  backdrop-filter: blur(0.3rem);
+  box-sizing: border-box;
+  padding: 1%;
+  box-shadow: 10px 10px 5px rgba(196, 118, 118, 0.226);
+}
+.box img {
+  width: 340px;
+}
+.right-side {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.right-side h1 {
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 5vw;
+  color: rgb(255, 255, 255);
+  margin: 0px;
+}
+
+.button {
+  margin-top: 15px;
+  color: rgb(255, 152, 152);
+  width: 200px;
+  height: 50px;
+  padding: 10px 0px;
+  border-radius: 100px;
+  background-color: white;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 1.7vw;
+  font-family: "Josefin Sans", sans-serif;
+}
+/* .button a {
+} */
+
+.button:hover {
+  background-color: rgb(0, 0, 0);
+}
+.button:hover a {
+  color: white;
+}
+
+h3 a {
+  color: white;
+}
+
+@media only screen and (min-width: 800px) {
+  .hamburger {
+    display: none;
+    margin: 10px;
+  }
+  .nav-bar {
+    width: 500px;
+    padding: 0px 3px;
+
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .mockupLogo {
+    display: none;
+  }
+  nav {
+    font-size: 2vw;
+  }
+}
