@@ -28,7 +28,7 @@ nav {
 }
 header {
   height: 100vh;
-  background-image: url("https://github.com/J-Sparr0w/Mockup-Website-first-try/blob/main/src/images/pexels-rene-asmussen-334979.jpg");
+  background-image: url(".../src/images/pexels-rene-asmussen-334979.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
